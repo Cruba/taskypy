@@ -1,11 +1,11 @@
+from __future__ import unicode_literals
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from six import python_2_unicode_compatible
 
 # Create your models here.
-
-
-
+@python_2_unicode_compatible
 class Post(models.Model):
 
     STATUS = ( ('draft', 'Draft'),('Published', 'published'))
