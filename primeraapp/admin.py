@@ -8,6 +8,6 @@ class postAdmin(admin.ModelAdmin):
     search_fields = ('title', 'body')
     date_hierarchy = 'publish'
     ordering = ['status', 'publish',]
-    prepolutaded_fields = {'slug': ('title',)}
+    prepopulated_fields = {'slug': ('title',)}
 
 admin.site.register(Post,postAdmin)
