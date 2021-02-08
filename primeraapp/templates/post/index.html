@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4Tasker</title>
+</head>
+<body>
+<p>Hola hola</p>
+<ul>
+ {% for p in posts %}
+    <li> <h1>Titulo: {{p.title}}
+    </h1>         autor: {{p.author}}
+        contenido: {{p.body}}
+
+
+    </li>
+
+    {% endfor %}
+</ul>
+
+</body>
+</html>
