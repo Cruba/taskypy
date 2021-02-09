@@ -13,4 +13,4 @@ def post_list (request):
         status='Published',
     )
 
-    return render(request, 'post/index.html', {'posts':posts})
+    return render(request, 'post/post_list.html', {'posts':posts})
